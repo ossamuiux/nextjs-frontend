@@ -1,7 +1,6 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
-import { useState } from 'react';
 
 export default function SearchBar() {
   // page.tsx가 아닌 일반 컴포넌트에선 useSearchParams훅으로 쿼리 파라메터 읽기

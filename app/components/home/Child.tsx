@@ -14,7 +14,7 @@ export default function Child() {
   const queryClient = useQueryClient();
 
   // 훅 사용시 동적으로 추가되는 데이터에 대한 타입을 제네릭으로 알려줌
-  const { isPending, data, isError, error } = useQuery<User[]>({
+  const { isPending, data, isError } = useQuery<User[]>({
     queryKey: ['user'],
     queryFn: () => {
       return fetch('http://localhost:9090/user').then((res) => res.json());

@@ -73,7 +73,7 @@ export default function Articles({
   useEffect(() => {
     params.set('page', page.toString());
     router.push(`?${params.toString()}`);
-  }, [page]);
+  }, [page, params, router]);
 
   function handleSearch(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();

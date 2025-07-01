@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { startTransition } from 'react';
 
-export default function error({
+export default function Error({
   error,
   reset,
 }: {
